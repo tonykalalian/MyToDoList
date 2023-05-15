@@ -10,12 +10,9 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 //Set up mongodb connection using mongoose to our todolistDB Database
-mongoose.connect(
-  "mongodb+srv://tkalalian:root@cluster0.r2zawkr.mongodb.net/todolistDB",
-  {
-    useNewUrlParser: true,
-  }
-);
+mongoose.connect("********URL**********", {
+  useNewUrlParser: true,
+});
 //Creating itemSchema
 const itemsSchema = {
   name: String,
